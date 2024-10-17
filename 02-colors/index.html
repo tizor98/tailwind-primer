@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Colors</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Default colors -->
     <!-- white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,  -->
 
     <!-- Text Colors -->
+    <p class="text-black">Tailwind is awesome</p>
+    <p class="text-white bg-black">Tailwind is awesome</p>
+    <p class="text-red-500">Tailwind is awesome</p>
+    <p class="text-green-500">Tailwind is awesome</p>
+    <p class="text-emerald-500">Tailwind is awesome</p>
+    <p class="text-zinc-300">Tailwind is awesome</p>
+    <p class="text-slate-500">Tailwind is awesome</p>
+    <p class="text-cyan-500">Tailwind is awesome</p>
 
     <!-- Background Colors -->
+    <p class="bg-slate-800 text-white">Tailwind is awesome</p>
+    <p class="bg-pink-500">Tailwind is awesome</p>
 
     <!-- Text Underline -->
+    <p class="underline decoration-green-500">Tailwind is awesome</p>
 
     <!-- Border Colors -->
+    <input type="text" class="border border-blue-400">Tailwind is awesome</input>
 
     <!-- Divide Colors -->
+    <div class="divide-y divide-blue-300">
+        <div>item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+        <div>item 4</div>
+        <div>item 5</div>
+    </div>
 
     <!-- Outline Colors -->
+    <button class="outline outline-orange-500">Tailwind is awesome</button>
 
     <!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
+    <div class="shadow-lg shadow-cyan-500 bg-green-400/50">Hellow</div>
 
     <!-- Accent Colors -->
+    <input type="checkbox" class="accent-purple-500" checked>
 
     <!-- Arbitrary Colors -->
-  </body>
+    <div class="bg-[#427fab]">Hellow</div>
+    <div class="bg-[rgb(55,0,255)]">Hellow</div>
+    <div class="bg-[steelblue]">Hellow</div>
+</body>
+
 </html>

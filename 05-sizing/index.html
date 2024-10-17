@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Sizing</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Width -->
+    <div class="bg-black text-white w-4">Hellow</div>
+    <div class="bg-black text-white w-40">Hellow</div>
 
     <!-- Percentages -->
+    <div class="bg-black text-white w-1/2">Hellow</div>
+    <div class="bg-black text-white w-3/5">Hellow</div>
+    <div class="bg-black text-white w-4/6">Hellow</div>
+    <div class="bg-black text-white w-1/12">Hellow</div>
 
     <!-- Width of the viewport -->
+    <div class="bg-blue-500 text-white w-screen">Hellow</div>
 
     <!-- 100% of container -->
-
-    <!-- min/max content -->
+    <div class="bg-yellow-500 text-white w-full">Hellow</div>
 
     <!-- Arbitrary width -->
+    <div class="bg-green-500 text-white w-[300px]">Hellow</div>
 
     <!-- Max Width -->
+    <div class="bg-gray-500 text-white max-w-2xl mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+        obcaecati cumque aliquam reiciendis provident praesentium maxime fuga, suscipit est delectus aliquid pariatur
+        iste modi rem accusamus cupiditate tempora temporibus voluptate?</div>
 
     <!-- Height (Most of the same options as widths) -->
-
-    <!-- Min Height -->
-
-    <!-- Max Height -->
+    <div class="flex items-end">
+        <div class="bg-orange-500 w-20 h-24">Hellow</div>
+        <div class="bg-orange-500 w-20 h-22">Hellow</div>
+        <div class="bg-orange-500 w-20 h-48">Hellow</div>
+        <div class="bg-orange-500 w-20 h-96">Hellow</div>
+    </div>
 
     <!-- Full screen height -->
-  </body>
+    <div class="bg-orange-500 w-20 h-screen">Hellow</div>
+</body>
+
 </html>
 
 <!-- 
