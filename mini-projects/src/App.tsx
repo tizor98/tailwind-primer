@@ -3,14 +3,11 @@ import ProductModal from "./components/ProductModal";
 import Subscribe from "./components/SubscribeCard";
 import productImg from './assets/headphone.png';
 import ImageGalery from "./components/ImageGalery";
+import Login from "./components/Login";
 
 
 export default function App() {
-    return (
-        <>
-            <ImageGaleryScreen />
-        </>
-    );
+    return <LoginScreen />;
 }
 
 export const SubscribeScreen = () => {
@@ -31,7 +28,7 @@ export const PricingScreen = () => {
 
 export const ProductModalScreen = () => {
     return (
-        <main className='w-full h-full bg-gray-200 flex items-center justify-center'>
+        <main className='w-full min-h-screen h-full bg-gray-200 flex items-center justify-center'>
             <ProductModal img={productImg} name="Razer Kraken Kitty Edt Gaming Headset Quartz" price={799} priceWithDiscount={599} stock={50} />
         </main>
     );
@@ -43,6 +40,14 @@ export const ImageGaleryScreen = () => {
             <section className="w-11/12 h-auto my-10 p-16 bg-white rounded-3xl shadow-2xl">
                 <ImageGalery />
             </section>
+        </main>
+    );
+};
+
+export const LoginScreen = () => {
+    return (
+        <main className="w-full min-h-screen h-full bg-rose-50 flex items-center justify-center">
+            <Login />
         </main>
     );
 };
