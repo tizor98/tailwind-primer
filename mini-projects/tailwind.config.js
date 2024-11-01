@@ -5,8 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      lineClamp: {
+        12: '12',
+        24: '24',
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+  ],
 }
 

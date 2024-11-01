@@ -4,10 +4,11 @@ import Subscribe from "./components/SubscribeCard";
 import productImg from './assets/headphone.png';
 import ImageGalery from "./components/ImageGalery";
 import Login from "./components/Login";
+import Memorials from "./components/Memorials";
 
 
 export default function App() {
-    return <LoginScreen />;
+    return <MemorialsScreen />;
 }
 
 export const SubscribeScreen = () => {
@@ -48,6 +49,14 @@ export const LoginScreen = () => {
     return (
         <main className="w-full min-h-screen h-full bg-rose-50 flex items-center justify-center">
             <Login />
+        </main>
+    );
+};
+
+export const MemorialsScreen = () => {
+    return (
+        <main className="w-full min-h-screen h-full bg-rose-50 flex items-center justify-center">
+            <Memorials />
         </main>
     );
 };
