@@ -5,10 +5,11 @@ import productImg from './assets/headphone.png';
 import ImageGalery from "./components/ImageGalery";
 import Login from "./components/Login";
 import Memorials from "./components/Memorials";
+import Fylo from "./components/Fylo";
 
 
 export default function App() {
-    return <MemorialsScreen />;
+    return <FyloScreen />;
 }
 
 export const SubscribeScreen = () => {
@@ -57,6 +58,14 @@ export const MemorialsScreen = () => {
     return (
         <main className="w-full min-h-screen h-full bg-rose-50 flex items-center justify-center">
             <Memorials />
+        </main>
+    );
+};
+
+export const FyloScreen = () => {
+    return (
+        <main className="w-full min-h-screen h-full bg-white dark:bg-darkBlue0 dark:text-white flex flex-col items-center justify-start">
+            <Fylo />
         </main>
     );
 };
